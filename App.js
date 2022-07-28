@@ -4,7 +4,7 @@ import {NavigationContainer} from "@react-navigation/native"
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import HomeScreen from './screens/HomeScreen';
-
+import MessageScreen from "./subscreens/MessageScreen";
 
 const Stack = createStackNavigator()
 
@@ -13,8 +13,12 @@ export default function App() {
     
    <NavigationContainer>
 
-    <Stack.Navigator>
+    <Stack.Navigator 
+    
+    >
       <Stack.Screen  name="home"  component={HomeScreen}/>
+      <Stack.Screen options={{headerShown: false}} name="message" component={MessageScreen} 
+      />
     </Stack.Navigator>
    </NavigationContainer>
   );

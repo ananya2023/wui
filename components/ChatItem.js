@@ -1,9 +1,12 @@
 import { View, Text, StyleSheet, TouchableOpacity,Image } from 'react-native'
 import React from 'react'
 import { theme } from '../theme'
-
-const ChatItem = ({picture,username,bio,lastMessage,time,isBlocked,isMuted,notification,hasStory}) => {
+import { useNavigation } from '@react-navigation/native'
+import MessageScreen from '../subscreens/MessageScreen'
+const ChatItem = ({picture,username,bio,lastMessage,time,notification,hasStory}) => {
   
+  const navigation = useNavigation();
+
   const showStoryCircle = () =>{
     if(hasStory) {
       return {
@@ -30,7 +33,13 @@ const ChatItem = ({picture,username,bio,lastMessage,time,isBlocked,isMuted,notif
  
   return (
     <View style={styles.container}>
-      <TouchableOpacity style={styles.conversation}>
+      <TouchableOpacity style={styles.conversation} 
+        onPress={()=> navigation.navigate('message',{
+          username:username,
+          bio:bio,
+          picture:picture,
+        })}
+        >
         <TouchableOpacity style={[styles.imageContainer,showStoryCircle()]}>
             <Image style={styles.image} source ={{uri:picture}} />
         </TouchableOpacity>

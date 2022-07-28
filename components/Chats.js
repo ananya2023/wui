@@ -13,9 +13,7 @@ const Chats = ({children}) => {
         lastMessage = "haha"
         time="5:00 PM"
         notification="7"
-        isBlocked
-        isMuted
-        hasStory
+      
 
          />
           <ChatItem
@@ -25,8 +23,6 @@ const Chats = ({children}) => {
         lastMessage = " Good Morning Akka"
         time="6:00 AM"
         notification="1"
-        isBlocked
-        isMuted
         hasStory
 
          />
@@ -37,8 +33,6 @@ const Chats = ({children}) => {
         lastMessage = " hello there"
         time="5:00 PM"
         notification="3"
-        isBlocked
-        isMuted
         hasStory
 
          />
@@ -48,9 +42,7 @@ const Chats = ({children}) => {
         bio="hello peeps"
         lastMessage = "funny🤣"
         time="1:37 PM"
-        notification=""
-        isBlocked
-        isMuted
+        notification="2"
         hasStory
 
          />
@@ -61,8 +53,6 @@ const Chats = ({children}) => {
         lastMessage = "Ok Thalli"
         time="2:57 PM"
         notification=""
-        isBlocked
-        isMuted
         hasStory
 
          />
@@ -74,8 +64,6 @@ const Chats = ({children}) => {
         lastMessage = " I am in"
         time="3:00 AM"
         notification="17"
-        isBlocked
-        isMuted
         hasStory
 
         
@@ -87,8 +75,6 @@ const Chats = ({children}) => {
         lastMessage = " Good Work Ananya"
         time="4:26 PM"
         notification=""
-        isBlocked
-        isMuted
         hasStory
 
          />
@@ -99,8 +85,6 @@ const Chats = ({children}) => {
         lastMessage = " Done👍"
         time="11:48 PM"
         notification=""
-        isBlocked
-        isMuted
         hasStory
 
          />
@@ -111,8 +95,6 @@ const Chats = ({children}) => {
         lastMessage = "Your order is delivered Ananya"
         time="7:08 PM"
         notification="1"
-        isBlocked
-        isMuted
         hasStory
 
          />
@@ -123,8 +105,6 @@ const Chats = ({children}) => {
         lastMessage = "Thankyou Mam"
         time="7:08 PM"
         notification="1"
-        isBlocked
-        isMuted
         hasStory
 
          />

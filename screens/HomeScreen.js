@@ -7,6 +7,7 @@ import CameraScreen from "../subscreens/CameraScreen"
 import ChatScreen from "../subscreens/ChatScreen"
 import CallScreen from "../subscreens/CallsScreen"
 import StatusScreen from "../subscreens/StatusScreen"
+import MessageScreen from "../subscreens/MessageScreen";
 
 const Tab = createMaterialTopTabNavigator()
 
@@ -57,7 +58,8 @@ const HomeScreen = ({navigation}) => {
       />
       <Tab.Screen  name="chats" component={ChatScreen}  />
       <Tab.Screen  name="status" component={StatusScreen}  />
-      <Tab.Screen  name="calls" component={CallScreen} headerShown={false}  />
+      <Tab.Screen  name="calls" component={CallScreen}   />
+     
     </Tab.Navigator>
 
   )
