@@ -14,7 +14,6 @@ export const theme = {
     fontSize : {
         title:18,
         subTitle:13,
-        message:15,
-
+        message:15
     }
 }
